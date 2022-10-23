@@ -1,8 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -11,3 +11,166 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.App {
+  padding: 50px 200px;
+}
+
+
+/**************** BEGIN Overriding Styles ****************/
+
+.fc-col-header-cell.fc-day {
+  /* color: red ; */
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.fc .fc-timegrid-col.fc-day-today {
+  background-color: #fff !important;
+}
+
+.fc .fc-toolbar-title {
+  font-weight: 400;
+  font-size: 16px !important;
+  padding:8px 48px;
+  margin: 0 10px !important;
+  border-radius: 5px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 0px 8px 0px;
+  text-transform: uppercase;
+}
+
+button.fc-next-button.fc-button.fc-button-primary, 
+button.fc-prev-button.fc-button.fc-button-primary {
+  background-color: #fff;
+  color: #000;
+  font-size: 12px !important;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 0px 8px 0px;
+}
+
+button.fc-ADD-button.fc-button.fc-button-primary, 
+.btn-close-modal {
+  background-color: #F15930;
+  font-size: 15px !important;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 6px; 
+}
+
+
+.fc-toolbar-title {
+  display: inline;
+}
+
+.fc-timegrid-slots > table > tbody > tr td {
+  font-size: 12px;
+  padding: 20px 10px;
+  color: #000;
+  opacity: .5;
+}
+
+td.fc-timegrid-slot.fc-timegrid-slot-label.fc-scrollgrid-shrink > div {
+  margin-top: -33px;
+}
+
+.fc-theme-standard td, 
+.fc-theme-standard th {
+  border: 1px solid #f0f0f0;
+}
+
+td.fc-timegrid-slot.fc-timegrid-slot-label.fc-scrollgrid-shrink, 
+th.fc-timegrid-axis,
+table.fc-scrollgrid.fc-scrollgrid-liquid, 
+.fc-theme-standard .fc-scrollgrid {
+  border: none !important;
+}
+
+button.fc-button.fc-button-primary.fc-button-active {
+  color: #808080 !important;
+}
+
+button.fc-timeGridWeek-button, 
+button.fc-timeGridDay-button {
+  background-color: #F9F9F9 !important;
+  color: #B3B3B3 !important;
+  border: none !important;
+  margin: 0 10px !important;
+}
+
+.eventInfo-timeText {
+  font-size: 12px;
+}
+
+.eventInfo-eventTitle {
+  font-size: 15px;
+}
+
+a.fc-col-header-cell-cushion {
+  font-size: 13px;
+  color: #808080;
+}
+
+a.fc-col-header-cell-cushion b {
+  color: #000;
+}
+
+
+.fc-timegrid-body {
+  z-index: 0 !important;
+}
+
+/**************** END Overriding Styles ****************/
+
+
+/**************** BEGIN Modal Form Styles ****************/
+.modal-form {
+  z-index: 1;  
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.btn-modal-add {
+  width: 100%;
+  background-color: #F15930;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-close-modal {
+  font-size: 12px;
+  margin: 8px 0;
+  background-color: #fff;
+  color: #F15930;
+  cursor: pointer;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 0px 8px 0px;
+} 
+
+input[type=datetime-local] {
+  padding: 14px 20px;
+  margin: 8px ;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.bg-form {
+  border-radius: 5px;
+  background-color: #f8f8f8;
+  padding: 20px;
+}
+/**************** END Modal Form Styles ****************/
