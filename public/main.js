@@ -1,11 +1,7 @@
 bodyLoaded()
 
 function bodyLoaded () {
-    document.querySelector('button.fc-timeGridWeek-button')
-    .innerHTML = 'Semaine'
-        
-    document.querySelector('button.fc-timeGridDay-button')
-    .innerHTML = 'Jour'
+    
     
     let days = document.querySelectorAll('a.fc-col-header-cell-cushion');
     days.forEach(day => {
